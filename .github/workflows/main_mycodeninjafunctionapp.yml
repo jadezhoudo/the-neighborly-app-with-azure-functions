@@ -30,10 +30,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          
-      - name: to Api Folder
-        run: cd NeighborlyAPI
-        
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -73,6 +70,6 @@ jobs:
           app-name: 'mycodeninjafunctionapp'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5B30F42A515F4B33BE78C6A403BE0A19 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D0B73F3796374D7BBEBCFC7FBA6FEB38 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
