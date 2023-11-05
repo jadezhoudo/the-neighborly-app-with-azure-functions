@@ -30,7 +30,10 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-
+          
+      - name: to Api Folder
+        run: cd NeighborlyAPI
+        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
