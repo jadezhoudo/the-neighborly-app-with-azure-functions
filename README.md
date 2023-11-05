@@ -242,3 +242,4 @@ RESOURCE_GROUP="<YOUR-RESOURCE-GROUP>"
 # run this command
 az group delete --name $RESOURCE_GROUP
 ```
+# the-neighborly-app-with-azure-functions
