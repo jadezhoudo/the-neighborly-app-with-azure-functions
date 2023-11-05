@@ -34,8 +34,11 @@ jobs:
       - name: to Api Folder
         run: cd NeighborlyAPI
 
-      - name: Install dependencies
-        run: pip3 install -r requirements.txt
+      - name: Install azure-functions
+        run: pip install azure-functions==1.2.1
+
+      - name: Install pymongo
+        run: pip install pymongo==3.10.1
 
       # Optional: Add step to run tests here
 
