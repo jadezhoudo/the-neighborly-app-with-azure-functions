@@ -9,11 +9,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if id:
         try:
-            url = "localhost"  # TODO: Update with appropriate MongoDB connection information
+            # TODO: Update with appropriate MongoDB connection information
+            url = "mongodb://codeninjacosmosdb:6l3D42zvFznQOcKISYnRqDVODkUFS4mS6ApCLaftMWWQCLkqyjmxhfWbLkVrmh0tVNuJPcO0A5w6ACDbonRpSA==@codeninjacosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@codeninjacosmosdb@"
             client = pymongo.MongoClient(url)
-            database = client['azure']
+            database = client['codeninjaDB']
             collection = database['advertisements']
-            
+
             query = {'_id': ObjectId(id)}
             result = collection.delete_one(query)
             return func.HttpResponse("")
