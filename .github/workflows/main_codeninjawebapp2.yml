@@ -29,7 +29,24 @@ jobs:
           source venv/bin/activate
 
       - name: Install dependencies
-        run: pip3 install -r requirements.txt
+        run: |
+          pip3 install azure-functions==1.2.1
+          pip3 install certifi==2020.4.5.1
+          pip3 install chardet==3.0.4
+          pip3 install click==7.1.2
+          pip3 install dominate==2.5.1
+          pip3 install Flask==1.1.2
+          pip3 install Flask-Bootstrap==3.3.7.1
+          pip3 install idna==2.9
+          pip3 install itsdangerous==1.1.0
+          pip3 install Jinja2==2.11.2
+          pip3 install MarkupSafe==1.1.1
+          pip3 install requests==2.23.0
+          pip3 install urllib3==1.25.9
+          pip3 install visitor==0.1.3
+          pip3 install Werkzeug==0.16.1
+          pip3 install feedgen
+
 
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Zip artifact for deployment
