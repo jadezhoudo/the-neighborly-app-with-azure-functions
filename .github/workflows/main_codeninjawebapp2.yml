@@ -22,13 +22,13 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: go to Api Folder
+        run: cd NeighborlyFrontEnd
+
       - name: Create and start virtual environment
         run: |
           python -m venv venv
           source venv/bin/activate
-
-      - name: go to Api Folder
-        run: cd NeighborlyFrontEnd
 
       - name: Install dependencies
         run: pip install -r requirements.txt
