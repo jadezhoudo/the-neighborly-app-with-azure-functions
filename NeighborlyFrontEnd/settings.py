@@ -1,5 +1,5 @@
 # --------- Flask settings
-SERVER_HOST = 'codeninjawebapp2.azurewebsites.net'  # Update this for the appropriate front-end website when up
+SERVER_HOST = 'https://codeninjawebapp2.azurewebsites.net'  # Update this for the appropriate front-end website when up
 SERVER_PORT = 5000
 FLASK_DEBUG = False  # Do not use debug mode in prod
 
@@ -13,7 +13,7 @@ API_VERSION = 'v1'
 # -------- Azure constants
 
 # API_URL format: "https://[FUNCTION_APP_NAME_GOES_HERE].azurewebsites.net"
-API_URL = "https://mycodeninjafunctionapp.azurewebsites.net/api/"
+API_URL = "https://mycodeninjafunctionapp.azurewebsites.net/api"
 
 # for local host if Azure functions served locally
 # API_URL = "http://localhost:7071/api"
